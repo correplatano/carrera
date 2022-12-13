@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- He cogido la versión jquery de googleapis directmente y he asociado la hoja de estilos. Además he traído un estilo de fuente de google fonts -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        </style>
+    <title>PAC_UF2PerladoHernandezIgnacio</title>
+</head>
+<body>
+    <header>
+        <div class="title" id="titulo">CARRERA DE COCHES</div>
+
+        <!-- Creación del desplegable que va a contener el número de participantes a elegir-->
+        <div class="desplegable" id="desplegable">
+            <label for="participantes">Elige el número de participantes</label>
+            <select name="participantes" id="participantes">
+                <option value="0">Pincha para elegir</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <!-- Creación de los botones necesarios para iniciar la carrera, reiniciar y volver a elegir participantes, que es la que retorna al inicio-->
+        <button id="iniciar" type="button">Iniciar</button>
+        <button id="reiniciar" type="button" hidden>Reiniciar</button>
+        <button id="reelegir" type="button" hidden>Reelegir Participantes</button>
+    </header>
+
+    <div class="circuito" id="circuito" hidden> <!--contenedor oculto que se mostrará una vez se elijan los participantes-->
+        <div class="carril"></div>
+    </div>
+    
+
+
+
+</body>
+</html>
